@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lucida Grande";
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clear {
+    clear: left;
+}
+
+/* top-wrapper CSS */
+.top-wrapper {
+    background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
+    background-size: cover;
+    padding-top: 180px;
+    padding-bottom: 100px;
+    color: white;
+    text-align: center;
+}
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+.top-wrapper h1 {
+    font-size: 45px;
+    letter-spacing: 5px;
+    opacity: 0.7;
+    padding-bottom: 10px;
+}
+.top-wrapper p {
+    opacity: 0.7;
+    padding-bottom: 3px;
+}
+.btn-wrapper {
+    margin: 20px 0;
+}
+.btn-wrapper p {
+    margin: 10px 0;
+}
+.btn {
+    padding: 12px 24px;
+    opacity: 0.8;
+     color: white;
+     border-radius: 4px;
+     display: inline-block;
+}
+.btn:hover {
+    opacity: 1;
+}
+.signup {
+    background-color: #239b76
+}
+.facebook {
+    background-color: #3b5998;
+    margin-right: 10px;
+}
+.twitter {
+    background-color: #55acee;
+}
+.fa {
+    margin-right: 5px;
+}
+
+/* header CSS */
+header {
+    height: 65px;
+    background-color: rgba(34, 49, 52, 0.9);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+.header-left {
+    float: left;
+}
+.header-left img {
+    width: 124px;
+    margin-top: 20px;
+}
+.header-right {
+    float: right;
+    transition: all 0.5s;
+}
+.header-right a {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 0 25px;
+    line-height: 65px;
+    display: block;
+}
+.header-right:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+/* modal CSS */
+.signup-modal-wrapper, .login-modal-wrapper{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+}
+.modal {
+    background-color: #e6ecf0;
+    padding: 20px 0 40px 0;
+    width: 450px;
+    border-radius: 10px;
+    position: absolute;
+    top: 20%;
+    left: 34%;
+    height: auto;
+    text-align: center;
+}
+.fa-times {
+    color: rgba(128, 128, 128, 0.46);
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    cursor: pointer;
+}
+#signup-form, #login-form {
+    width: 100%;
+}
+
+#signup-form h2, #login-form h2 {
+    letter-spacing: 1px;
+    color: #5f5d60;
+    margin-bottom: 40px;
+}
+
+#signup-form input, #login-form input {
+    width: 320px;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #d0d5d8;
+}
+
+#submit-btn {
+    background-color: #5dca88;
+    display: inline-block;
+    padding: 14px 140px;
+    color: white;
+    border-radius: 3px;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+
+/* lesson-wrapper CSS */
+.lesson-wrapper {
+    height: 500px;
+    padding-bottom: 80px;
+    /* background-color: #f7f7f7; */
+    text-align: center;
+}
+.heading {
+    padding: 60px 0 30px 0;
+    color: #5f5d60;
+}
+.heading h2 {
+    font-weight: normal;
+}
+.lesson {
+    float: left;
+    width: 25%;
+}
+.lesson-icon {
+    position: relative;
+}
+.lesson-icon p {
+    position: absolute;
+    top: 90px;
+    width: 100%;
+    color: white;
+}
+.text-contents {
+    color: #b3aeb5;
+    width: 80%;
+    font-size: 12px;
+    padding-top: 20px;
+    display: none;
+}
+.text-active {
+    display: inline-block;
+}
+
+
+/* faq-wrapper CSS */
+.faq-wrapper {
+    background-color: #e6ecf0;
+    text-align: center;
+    padding-bottom: 80px;
+    color: #5f5d60;
+}
+#faq-list {
+    width: 500px;
+    margin: 0 auto;
+    padding: 0;
+}
+.faq-list-item {
+    border-bottom: 1px solid #ccc;
+    margin: 30px;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+}
+.faq-list-item h3 {
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.faq-list-item span {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 13px;
+    color: #ccc;
+}
+.answer {
+    font-size: 12px;
+    padding: 5px 0;
+    margin-bottom: 10px;
+    display: none;
+}
+
+
+
+/* message-wrapper CSS */
+.heading h3 {
+    font-weight: normal;
+}
+.message-wrapper {
+    padding-bottom: 80px;
+    text-align: center;
+}
+.message {
+    background-color: #5dca88;
+    padding: 15px 40px;
+    box-shadow: 0 7px #1a7940;
+    cursor: pointer;
+}
+.message:active {
+    box-shadow: none;
+    position: relative;
+    top: 7px;
+}
+
+
+/* footer CSS */
+footer {
+    border-top: 1px solid #eee;
+}
+footer img {
+    width: 124px;
+    margin-top: 30px;
+}
+footer p {
+    font-size: 12px;
+    color: #b3aeb5;
+}
